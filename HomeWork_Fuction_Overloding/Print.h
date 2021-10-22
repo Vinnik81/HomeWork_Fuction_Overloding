@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include"stdafx.h"
 #include"Arrs.h"
 void Print(int arr[], const unsigned int N);
@@ -9,11 +9,11 @@ void Print(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS
 void Print(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Print(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Print(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-void ReversePrint(int arr[], const unsigned int N); //Выводит массив в обратном направлении;
-void ReversePrint(double brr[], const unsigned int N); //Выводит массив в обратном направлении;
-void ReversePrint(float brr[], const unsigned int N); //Выводит массив в обратном направлении;
-void ReversePrint(char arr[], const unsigned int N); //Выводит массив в обратном направлении;
-void ReversePrint(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Выводит массив в обратном направлении;
-void ReversePrint(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Выводит массив в обратном направлении;
-void ReversePrint(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Выводит массив в обратном направлении;
-void ReversePrint(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Выводит массив в обратном направлении;
+void ReversePrint(int arr[], const unsigned int N); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(double brr[], const unsigned int N); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(float brr[], const unsigned int N); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(char arr[], const unsigned int N); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
+void ReversePrint(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS); //Р’С‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РІ РѕР±СЂР°С‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё;
