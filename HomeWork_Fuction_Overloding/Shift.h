@@ -1,18 +1,18 @@
-#pragma once
+п»ї#pragma once
 #include"stdafx.h"
 #include"ConstArrs.h"
-void shiftLeft(int arr[], const unsigned int N, int k, int shift_L); //Выполняет циклический сдвиг массива влево, на заданное число элементов; 
-void shiftLeft(double brr[], const unsigned int N, int k, double shift_L); //Выполняет циклический сдвиг массива влево, на заданное число элементов; 
-void shiftLeft(float brr[], const unsigned int N, int k, float shift_L); //Выполняет циклический сдвиг массива влево, на заданное число элементов; 
-void shiftLeft(char arr[], const unsigned int N, int k, char shift_L); //Выполняет циклический сдвиг массива влево, на заданное число элементов; 
+void shiftLeft(int arr[], const unsigned int N, int k, int shift_L); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ; 
+void shiftLeft(double brr[], const unsigned int N, int k, double shift_L); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ; 
+void shiftLeft(float brr[], const unsigned int N, int k, float shift_L); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ; 
+void shiftLeft(char arr[], const unsigned int N, int k, char shift_L); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІР»РµРІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ; 
 void shiftLeft(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_L);
 void shiftLeft(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_L);
 void shiftLeft(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_L);
 void shiftLeft(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, char shift_L);
-void shiftRight(int arr[], const unsigned int N, int k, int shift_R); //Выполняет циклический сдвиг массива вправо, на заданное число элементов;
-void shiftRight(double brr[], const unsigned int N, int k, double shift_R); //Выполняет циклический сдвиг массива вправо, на заданное число элементов;
-void shiftRight(float brr[], const unsigned int N, int k, float shift_R); //Выполняет циклический сдвиг массива вправо, на заданное число элементов;
-void shiftRight(char arr[], const unsigned int N, int k, char shift_R); //Выполняет циклический сдвиг массива вправо, на заданное число элементов;
+void shiftRight(int arr[], const unsigned int N, int k, int shift_R); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ;
+void shiftRight(double brr[], const unsigned int N, int k, double shift_R); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ;
+void shiftRight(float brr[], const unsigned int N, int k, float shift_R); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ;
+void shiftRight(char arr[], const unsigned int N, int k, char shift_R); //Р’С‹РїРѕР»РЅСЏРµС‚ С†РёРєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР° РІРїСЂР°РІРѕ, РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ;
 void shiftRight(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_R);
 void shiftRight(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_R);
 void shiftRight(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_R);
