@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 #include"stdafx.h"
 #include"ConstArrs.h"
-void Sort(int arr[], const unsigned int N); //Сортирует массив в порядке возрастания;
-void Sort(double brr[], const unsigned int N); //Сортирует массив в порядке возрастания;
-void Sort(float brr[], const unsigned int N); //Сортирует массив в порядке возрастания;
-void Sort(char arr[], const unsigned int N); //Сортирует массив в порядке возрастания;
+void Sort(int arr[], const unsigned int N); //РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ;
+void Sort(double brr[], const unsigned int N); //РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ;
+void Sort(float brr[], const unsigned int N); //РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ;
+void Sort(char arr[], const unsigned int N); //РЎРѕСЂС‚РёСЂСѓРµС‚ РјР°СЃСЃРёРІ РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ;
 void Sort(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Sort(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Sort(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
