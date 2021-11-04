@@ -38,29 +38,17 @@ template<typename T>void ReversePrint(T arr[ROWS][COLS], const unsigned int ROWS
 template<typename T>T Sum(T arr[], const unsigned int N); //Возвращает сумму элементов массива;
 template<typename T>T Sum(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 template<typename T>double Avg(T arr[], const unsigned int N); //Возвращает среднее арифметическое элементов массива;
-double Avg(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-double Avg(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-float Avg(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-double Avg(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
+template<typename T>double Avg(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 template<typename T>T minValueIn(T arr[], const unsigned int N); //Возвращает минимальное значение из массива;
 template<typename T>T minValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 template<typename T>T maxValueIn(T arr[], const unsigned int N); //Возвращает максимальное значение из массива;
 template<typename T>T maxValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 template<typename T>void Sort(T arr[], const unsigned int N); //Сортирует массив в порядке возрастания;
-void Sort(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-void Sort(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-void Sort(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
-void Sort(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
+template<typename T>void Sort(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 template<typename T>void shiftLeft(T arr[], const unsigned int N, int k); //Выполняет циклический сдвиг массива влево, на заданное число элементов; 
-void shiftLeft(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_L);
-void shiftLeft(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_L);
-void shiftLeft(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_L);
-void shiftLeft(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, char shift_L);
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k);
 template<typename T>void shiftRight(T arr[], const unsigned int N, int k); //Выполняет циклический сдвиг массива вправо, на заданное число элементов;
-void shiftRight(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_R);
-void shiftRight(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_R);
-void shiftRight(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_R);
-void shiftRight(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, char shift_R);
+template<typename T>void shiftRight(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k);
 
 void main()
 {
@@ -72,8 +60,6 @@ void main()
 	char drr[N] = { 'h','o','u','s','e' };
 	int minRand = 0, maxRand = 100;
 	int k = 0;
-	int shift_L = 0;
-	int shift_R = 0;
 	cout << GR_FUN;
 	FillRand(arr, N, minRand, maxRand);
 	cout << "Прямой массив int:" << endl;
@@ -222,19 +208,19 @@ void main()
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного int массива влево:" << endl;
-	shiftLeft(i_arr_2, ROWS, COLS, k, shift_L);
+	shiftLeft(i_arr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного double массива влево:" << endl;
-	shiftLeft(i_brr_2, ROWS, COLS, k, shift_L);
+	shiftLeft(i_brr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного float массива влево:" << endl;
-	shiftLeft(i_crr_2, ROWS, COLS, k, shift_L);
+	shiftLeft(i_crr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного char массива влево:" << endl;
-	shiftLeft(i_drr_2, ROWS, COLS, k, shift_L);
+	shiftLeft(i_drr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << GR_FUN_R;
 	cout << "Введите число сдвига элементов: "; cin >> k;
@@ -255,19 +241,19 @@ void main()
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного int массива вправо:" << endl;
-	shiftRight(i_arr_2, ROWS, COLS, k, shift_R);
+	shiftRight(i_arr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного double массива вправо:" << endl;
-	shiftRight(i_brr_2, ROWS, COLS, k, shift_R);
+	shiftRight(i_brr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного float массива вправо:" << endl;
-	shiftRight(i_crr_2, ROWS, COLS, k, shift_R);
+	shiftRight(i_crr_2, ROWS, COLS, k);
 	cout << GRATE;
 	cout << "Введите число сдвига элементов: "; cin >> k;
 	cout << "Результат сдвига двойного char массива вправо:" << endl;
-	shiftRight(i_drr_2, ROWS, COLS, k, shift_R);
+	shiftRight(i_drr_2, ROWS, COLS, k);
 	cout << GRATE;
 }
 //int
@@ -341,7 +327,7 @@ void FillRand(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int
 		}
 	}
 }
-
+//Print
 template<typename T>void Print(T arr[], const unsigned int N)
 {
 	for (int i = 0; i < N; i++)
@@ -362,7 +348,7 @@ template<typename T>void Print(T arr[ROWS][COLS], const unsigned int ROWS, const
 		cout << endl;
 	}
 }
-
+//ReversPrint
 template<typename T>void ReversePrint(T arr[], const unsigned int N)
 {
 	for (int i = N - 1; i >= 0; i--)
@@ -371,7 +357,7 @@ template<typename T>void ReversePrint(T arr[], const unsigned int N)
 	}
 	cout << endl;
 }
-
+//двумерный
 template<typename T>void ReversePrint(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	for (int i = ROWS - 1; i >= 0; i--)
@@ -383,7 +369,7 @@ template<typename T>void ReversePrint(T arr[ROWS][COLS], const unsigned int ROWS
       cout << endl;
 	}	
 }
-
+//Sum
 template<typename T>T Sum(T arr[], const unsigned int N)
 {
 	T sum = T();
@@ -394,7 +380,7 @@ template<typename T>T Sum(T arr[], const unsigned int N)
 
 	return sum;
 }
-
+//двумерный
 template<typename T>T Sum(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T sum = T();
@@ -408,7 +394,7 @@ template<typename T>T Sum(T arr[ROWS][COLS], const unsigned int ROWS, const unsi
 
 	return sum;
 }
-
+//Avg
 template<typename T>double Avg(T arr[], const unsigned int N)
 {
 	double avg;
@@ -416,39 +402,22 @@ template<typename T>double Avg(T arr[], const unsigned int N)
 	
 	return avg;
 }
-
-//int_2
-double Avg(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+//двумерный
+template<typename T>double Avg(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
+	T sum = T();
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			sum += arr[i][j];
+		}
+	}
 	double avg;
-	avg = (double)Sum(i_arr_2, ROWS, COLS) / ROWS + COLS;
+	avg = (double)sum / ROWS + COLS;
 	return avg;
 }
-//doble_2
-double Avg(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
-	double avg;
-	avg = Sum(i_brr_2, ROWS, COLS) / ROWS + COLS;
-
-	return avg;
-}
-//float_2
-float Avg(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
-	float avg;
-	avg = Sum(i_crr_2, ROWS, COLS) / ROWS + COLS;
-
-	return avg;
-}
-//char_2
-double Avg(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
-	char avg;
-	avg = Sum(i_drr_2, ROWS, COLS) / ROWS + COLS;
-
-	return avg;
-}
-//int
+//minValue
 template<typename T>T minValueIn(T arr[], const unsigned int N)
 {
 	T min = T();
@@ -460,7 +429,7 @@ template<typename T>T minValueIn(T arr[], const unsigned int N)
 	
 	return min;
 }
-
+//двумерный
 template<typename T>T minValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T min = T();
@@ -476,7 +445,7 @@ template<typename T>T minValueIn(T arr[ROWS][COLS], const unsigned int ROWS, con
 
 	return min;
 }
-
+//maxValue
 template<typename T>T maxValueIn(T arr[], const unsigned int N)
 {
 	T max = T();
@@ -488,7 +457,7 @@ template<typename T>T maxValueIn(T arr[], const unsigned int N)
 	
 	return max;
 }
-
+//двумерный
 template<typename T>T maxValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T max = T();
@@ -504,12 +473,13 @@ template<typename T>T maxValueIn(T arr[ROWS][COLS], const unsigned int ROWS, con
 
 	return max;
 }
-
+//Sort
 template<typename T>void Sort(T arr[], const unsigned int N)
 {
+	T tmp = T();
 	for (int i = 1; i < N; i++)
 	{
-		int tmp = arr[i];
+	    tmp = arr[i];
 		for (int j = i - 1; j >= 0; j--)
 		{
 			if (arr[j] > tmp)
@@ -522,15 +492,15 @@ template<typename T>void Sort(T arr[], const unsigned int N)
 	
 	Print(arr, N);
 }
-
-//int_2
-void Sort(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+//двумерный
+template<typename T>void Sort(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
+	T tmp = T();
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			int tmp = arr[i][j];
+		    tmp = arr[i][j];
 			for (int k = j - 1; k >= 0; k--)
 			{
 				if (arr[i][k] > tmp)
@@ -541,70 +511,16 @@ void Sort(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 			}
 		}
 	}
-	Print(i_arr_2, ROWS, COLS);
-}
-
-//double_2
-void Sort(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			double tmp = arr[i][j];
-			for (int k = j - 1; k >= 0; k--)
-			{
-				if (arr[i][k] > tmp)
-				{
-					arr[i][k + 1] = arr[i][k];
-					arr[i][k] = tmp;
-				}
-			}
+			cout << arr[i][j] << "\t";
 		}
+		cout << endl;
 	}
-	Print(i_brr_2, ROWS, COLS);
 }
-//float_2
-void Sort(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			float tmp = arr[i][j];
-			for (int k = j - 1; k >= 0; k--)
-			{
-				if (arr[i][k] > tmp)
-				{
-					arr[i][k + 1] = arr[i][k];
-					arr[i][k] = tmp;
-				}
-			}
-		}
-	}
-	Print(i_crr_2, ROWS, COLS);
-}
-//char_2
-void Sort(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			char tmp = arr[i][j];
-			for (int k = j - 1; k >= 0; k--)
-			{
-				if (arr[i][k] > tmp)
-				{
-					arr[i][k + 1] = arr[i][k];
-					arr[i][k] = tmp;
-				}
-			}
-		}
-	}
-	Print(i_drr_2, ROWS, COLS);
-}
-
+//shift_Left
 template<typename T>void shiftLeft(T arr[], const unsigned int N, int k)
 {
 	T shift_L = T();
@@ -619,10 +535,10 @@ template<typename T>void shiftLeft(T arr[], const unsigned int N, int k)
 	
 	Print(arr, N);
 }
-
-//int_2
-void shiftLeft(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_L)
+//двумерный
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k)
 {
+	T shift_L = T();
 	for (int a = 0; a < k; a++)
 	{
 		for (int i = 0; i < ROWS; i++)
@@ -634,61 +550,16 @@ void shiftLeft(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int 
 			arr[i][COLS - 1] = shift_L;
 		}
 	}
-
-	Print(i_arr_2, ROWS, COLS);
-}
-//double_2
-void shiftLeft(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_L)
-{
-	for (int a = 0; a < k; a++)
+	for (int i = 0; i < ROWS; i++)
 	{
-		for (int i = 0; i < ROWS; i++)
+		for (int j = 0; j < COLS; j++)
 		{
-			for (int j = 0; j <= COLS - 1; j++)
-			{
-				(j == 0) ? shift_L = arr[i][0] : arr[i][j - 1] = arr[i][j];
-			}
-			arr[i][COLS - 1] = shift_L;
+			cout << arr[i][j] << "\t";
 		}
+		cout << endl;
 	}
-
-	Print(i_brr_2, ROWS, COLS);
 }
-//float_2
-void shiftLeft(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_L)
-{
-	for (int a = 0; a < k; a++)
-	{
-		for (int i = 0; i < ROWS; i++)
-		{
-			for (int j = 0; j <= COLS - 1; j++)
-			{
-				(j == 0) ? shift_L = arr[i][0] : arr[i][j - 1] = arr[i][j];
-			}
-			arr[i][COLS - 1] = shift_L;
-		}
-	}
-
-	Print(i_crr_2, ROWS, COLS);
-}
-//char_2
-void shiftLeft(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, char shift_L)
-{
-	for (int a = 0; a < k; a++)
-	{
-		for (int i = 0; i < ROWS; i++)
-		{
-			for (int j = 0; j <= COLS - 1; j++)
-			{
-				(j == 0) ? shift_L = arr[i][0] : arr[i][j - 1] = arr[i][j];
-			}
-			arr[i][COLS - 1] = shift_L;
-		}
-	}
-
-	Print(i_drr_2, ROWS, COLS);
-}
-
+//shift_Right
 template<typename T>void shiftRight(T arr[], const unsigned int N, int k)
 {
 	T shift_R = T();
@@ -704,10 +575,10 @@ template<typename T>void shiftRight(T arr[], const unsigned int N, int k)
 	Print(arr, N);
 	
 }
-
-//int_2
-void shiftRight(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, int shift_R)
+//двумерный
+template<typename T>void shiftRight(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k)
 {
+	T shift_R = T();
 	for (int a = 0; a < k; a++)
 	{
 		for (int i = 0; i < ROWS; i++)
@@ -719,57 +590,12 @@ void shiftRight(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int
 			arr[i][0] = shift_R;
 		}
 	}
-
-	Print(i_arr_2, ROWS, COLS);
-}
-//double_2
-void shiftRight(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, double shift_R)
-{
-	for (int a = 0; a < k; a++)
+	for (int i = 0; i < ROWS; i++)
 	{
-		for (int i = 0; i < ROWS; i++)
+		for (int j = 0; j < COLS; j++)
 		{
-			for (int j = COLS - 1; j >= 0; j--)
-			{
-				(j == COLS - 1) ? shift_R = arr[i][COLS - 1] : arr[i][j + 1] = arr[i][j];
-			}
-			arr[i][0] = shift_R;
+			cout << arr[i][j] << "\t";
 		}
+		cout << endl;
 	}
-
-	Print(i_brr_2, ROWS, COLS);
-}
-//float_2
-void shiftRight(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, float shift_R)
-{
-	for (int a = 0; a < k; a++)
-	{
-		for (int i = 0; i < ROWS; i++)
-		{
-			for (int j = COLS - 1; j >= 0; j--)
-			{
-				(j == COLS - 1) ? shift_R = arr[i][COLS - 1] : arr[i][j + 1] = arr[i][j];
-			}
-			arr[i][0] = shift_R;
-		}
-	}
-
-	Print(i_crr_2, ROWS, COLS);
-}
-//char_2
-void shiftRight(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k, char shift_R)
-{
-	for (int a = 0; a < k; a++)
-	{
-		for (int i = 0; i < ROWS; i++)
-		{
-			for (int j = COLS - 1; j >= 0; j--)
-			{
-				(j == COLS - 1) ? shift_R = arr[i][COLS - 1] : arr[i][j + 1] = arr[i][j];
-			}
-			arr[i][0] = shift_R;
-		}
-	}
-
-	Print(i_drr_2, ROWS, COLS);
 }
