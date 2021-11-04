@@ -7,16 +7,22 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork_Fuction_Overloding
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|ARM.Build.0 = Debug|ARM
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|x64.ActiveCfg = Debug|x64
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|x64.Build.0 = Debug|x64
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|x86.ActiveCfg = Debug|Win32
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Debug|x86.Build.0 = Debug|Win32
+		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Release|ARM.ActiveCfg = Release|ARM
+		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Release|ARM.Build.0 = Release|ARM
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Release|x64.ActiveCfg = Release|x64
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Release|x64.Build.0 = Release|x64
 		{E3338FB1-41EE-4249-8C2F-FA280E8A861D}.Release|x86.ActiveCfg = Release|Win32

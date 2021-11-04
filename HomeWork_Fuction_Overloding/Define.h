@@ -1,0 +1,11 @@
+#pragma once
+#define GR_FUN "#\t\t\t\t\t\t\tПрямой массив\t\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_O "#\t\t\t\t\t\t\tОбратный массив\t\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_SUM "#\t\t\t\t\t\t\tСумма массива\t\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_ARM "#\t\t\t\t\t\t  Среднее арифметическое массива\t\t\t\t\t\t#\n\n"
+#define GR_FUN_MIN "#\t\t\t\t\t\t\tMIN массива\t\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_MAX "#\t\t\t\t\t\t\tMAX массива\t\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_SORT "#\t\t\t\t\t\t\tСортировка массива\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_L "#\t\t\t\t\t\t\tСдвиг массива влево\t\t\t\t\t\t\t#\n\n"
+#define GR_FUN_R "#\t\t\t\t\t\t\tСдвиг массива вправо\t\t\t\t\t\t\t#\n\n"
+#define  GRATE "###################################################\n\n"
