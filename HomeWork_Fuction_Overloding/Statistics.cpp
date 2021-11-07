@@ -1,4 +1,4 @@
-#include"Statistics.h"
+п»ї#include"Statistics.h"
 //Sum
 template<typename T>T Sum(T arr[], const unsigned int N)
 {
@@ -10,7 +10,7 @@ template<typename T>T Sum(T arr[], const unsigned int N)
 
 	return sum;
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T>T Sum(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T sum = T();
@@ -32,7 +32,7 @@ template<typename T> double Avg(T arr[], const unsigned int N)
 
 	return avg;
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T> double Avg(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T sum = T();
@@ -59,7 +59,7 @@ template<typename T>T minValueIn(T arr[], const unsigned int N)
 
 	return min;
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T>T minValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T min = T();
@@ -70,7 +70,7 @@ template<typename T>T minValueIn(T arr[ROWS][COLS], const unsigned int ROWS, con
 		{
 			if (min > arr[i][j]) min = arr[i][j];
 		}
-		cout << i + 1 << " ряд = " << min << endl;
+		cout << i + 1 << " СЂСЏРґ = " << min << endl;
 	}
 
 	return min;
@@ -87,7 +87,7 @@ template<typename T>T maxValueIn(T arr[], const unsigned int N)
 
 	return max;
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T>T maxValueIn(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T max = T();
@@ -98,7 +98,7 @@ template<typename T>T maxValueIn(T arr[ROWS][COLS], const unsigned int ROWS, con
 		{
 			if (max < arr[i][j]) max = arr[i][j];
 		}
-		cout << i + 1 << " ряд = " << max << endl;
+		cout << i + 1 << " СЂСЏРґ = " << max << endl;
 	}
 
 	return max;
