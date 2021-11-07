@@ -1,4 +1,4 @@
-#include"Print.h"
+ï»¿#include"Print.h"
 //Print
 template<typename T> void Print(T arr[], const unsigned int N)
 {
@@ -8,7 +8,7 @@ template<typename T> void Print(T arr[], const unsigned int N)
 	}
 	cout << endl;
 }
-//äâóìåðíûé
+//Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ñ‹Ð¹
 template<typename T> void Print(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	for (int i = 0; i < ROWS; i++)
@@ -29,7 +29,7 @@ template<typename T> void ReversePrint(T arr[], const unsigned int N)
 	}
 	cout << endl;
 }
-//äâóìåðíûé
+//Ð´Ð²ÑƒÐ¼ÐµÑ€Ð½Ñ‹Ð¹
 template<typename T> void ReversePrint(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	for (int i = ROWS - 1; i >= 0; i--)
