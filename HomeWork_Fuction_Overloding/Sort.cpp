@@ -1,4 +1,4 @@
-#include"Sort.h"
+п»ї#include"Sort.h"
 #include"Print.h"
 //Sort
 template<typename T> void Sort(T arr[], const unsigned int N)
@@ -19,7 +19,7 @@ template<typename T> void Sort(T arr[], const unsigned int N)
 
 	Print(arr, N);
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T> void Sort(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	T tmp = T();
