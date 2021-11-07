@@ -1,10 +1,13 @@
-﻿
-#include"Define.h"
+﻿#include"Define.h"
 #include"FillRand.h"
 #include"Print.h"
 #include"Statistics.h"
 #include"Sort.h"
 #include"Shift.h"
+#include"Print.cpp"
+#include"Statistics.cpp"
+#include"Sort.cpp"
+#include"Shift.cpp"
 
 void main()
 {
