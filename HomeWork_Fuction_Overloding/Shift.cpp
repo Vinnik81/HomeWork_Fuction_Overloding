@@ -1,4 +1,4 @@
-#include"Shift.h"
+п»ї#include"Shift.h"
 #include"Print.h"
 //shift_Left
 template<typename T> void shiftLeft(T arr[], const unsigned int N, int k)
@@ -15,7 +15,7 @@ template<typename T> void shiftLeft(T arr[], const unsigned int N, int k)
 
 	Print(arr, N);
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T> void shiftLeft(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k)
 {
 	T shift_L = T();
@@ -55,7 +55,7 @@ template<typename T> void shiftRight(T arr[], const unsigned int N, int k)
 	Print(arr, N);
 
 }
-//двумерный
+//РґРІСѓРјРµСЂРЅС‹Р№
 template<typename T> void shiftRight(T arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int k)
 {
 	T shift_R = T();
